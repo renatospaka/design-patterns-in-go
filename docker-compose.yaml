@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  app:
+    build: .
+    container_name: app_patterns_go
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    extra_hosts:
+      - "host.docker.internal:172.17.0.1"
