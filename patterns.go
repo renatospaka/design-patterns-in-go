@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// Testing BUILDER
-	b := builder.PersonBuilder{}
+	b := builder.PersonBuilderF{}
 	person := b.Called("João").
 		WorksAsA("Bartender").
 		Build() 
