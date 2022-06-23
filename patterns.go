@@ -7,10 +7,31 @@ import (
 )
 
 func main() {
-	// Testing BUILDER
+	// **********
+	// ** BUILDER
+	// **********
+	testBuilderPattern()
+}
+
+func testBuilderPattern() {
+	// -> Function
 	b := builder.PersonBuilderF{}
-	person := b.Called("João").
+	personF := b.Called("João").
 		WorksAsA("Bartender").
 		Build() 
-	fmt.Println(*person)
+	fmt.Println("BUILDER -> Function", *personF)
+
+	// -> Facet
+	pb := builder.NewPersonBuilderFa()
+	pb.
+		Lives().
+			At("456, Any Street").
+			In("London").
+			WithPostcode("00A222X").
+		Works().
+			At("This Club").
+			AsA("Bartender").
+			Earning(123000)
+	personFa := pb.Build() 
+	fmt.Println("BUILDER -> Facet", *personFa)
 }
