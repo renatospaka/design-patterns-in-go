@@ -53,6 +53,14 @@ func testBuilderPattern() {
 }
 
 func testFactoryPattern() {
+	// -> Function
 	personFuncFac := factory.NewPersonFuncFactory("John", 33)
 	fmt.Println("FACTORY -> Functional", personFuncFac)
+
+	// -> Interface
+	personInterfFac := factory.NewPersonInterfFactory("John", 33)
+	personInterfFac.SayHello()
+	personInterfFac = factory.NewPersonInterfFactory("Sam", 83)
+	personInterfFac.SayHello()
+	fmt.Println("FACTORY -> Interface", personInterfFac)
 }
