@@ -76,5 +76,10 @@ func testFactoryPattern() {
 	bossFactory := factory.NewEmployeeFactory2("CEO", 110000)
 	boss := bossFactory.Create("Sam")
 	fmt.Println("FACTORY -> Generator (Struct)", boss)
+
+	// -> Prototype
+	managerProto := factory.NewEmployeeFacProto(factory.Manager)
+	managerProto.Name = "Jane"
+	fmt.Println("FACTORY -> Prototype", managerProto)
 }
 
