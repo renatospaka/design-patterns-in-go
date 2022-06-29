@@ -12,7 +12,8 @@ func TestBuilderPattern() {
 	personF := b.Called("João").
 		WorksAsA("Bartender").
 		Build() 
-	fmt.Println("BUILDER -> Functional", *personF)
+	fmt.Println("BUILDER -> Functional =>", personF.Name(), personF.Position())
+	
 
 	// -> Facet
 	pb := builder.NewPersonBuilderFa()
