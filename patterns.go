@@ -5,13 +5,18 @@ import (
 )
 
 func main() {
-	// **********
-	// ** BUILDER
-	// **********
-	tests.TestBuilderPattern()
+	// // **********
+	// // ** BUILDER
+	// // **********
+	// tests.TestBuilderPattern()
+
+	// // **********
+	// // ** FACTORY
+	// // **********
+	// tests.TestFactoryPattern()
 
 	// **********
-	// ** FACTORY
+	// ** PROTOTYPE
 	// **********
-	tests.TestFactoryPattern()
+	tests.TestPrototypePattern()
 }

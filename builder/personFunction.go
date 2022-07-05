@@ -31,3 +31,11 @@ func (b *PersonBuilderF) Build() *PersonF {
 
 	return &p
 }
+
+func (p *PersonF) Position() string {
+	return p.position
+}
+
+func (p *PersonF) Name() string {
+	return p.name
+}
