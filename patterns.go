@@ -15,8 +15,13 @@ func main() {
 	// // **********
 	// tests.TestFactoryPattern()
 
+	// // **********
+	// // ** PROTOTYPE
+	// // **********
+	// tests.TestPrototypePattern()
+
 	// **********
-	// ** PROTOTYPE
+	// ** SINGLETON
 	// **********
-	tests.TestPrototypePattern()
+	tests.TestSingleton()
 }
