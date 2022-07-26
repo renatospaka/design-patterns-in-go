@@ -20,8 +20,13 @@ func main() {
 	// // **********
 	// tests.TestPrototypePattern()
 
+	// // **********
+	// // ** SINGLETON
+	// // **********
+	// tests.TestSingleton()
+
 	// **********
-	// ** SINGLETON
+	// ** BRIDGE
 	// **********
-	tests.TestSingleton()
+	tests.TestBridge()
 }
