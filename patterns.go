@@ -5,28 +5,33 @@ import (
 )
 
 func main() {
-	// // **********
+	// // ************
 	// // ** BUILDER
-	// // **********
+	// // ************
 	// tests.TestBuilderPattern()
 
-	// // **********
+	// // ************
 	// // ** FACTORY
-	// // **********
+	// // ************
 	// tests.TestFactoryPattern()
 
-	// // **********
+	// // ************
 	// // ** PROTOTYPE
-	// // **********
+	// // ************
 	// tests.TestPrototypePattern()
 
-	// // **********
+	// // ************
 	// // ** SINGLETON
-	// // **********
+	// // ************
 	// tests.TestSingleton()
 
-	// **********
-	// ** BRIDGE
-	// **********
-	tests.TestBridge()
+	// // ************
+	// // ** BRIDGE
+	// // ************
+	// tests.TestBridge()
+
+	// ************
+	// ** COMPOSIT
+	// ************
+	tests.TestComposit()
 }
