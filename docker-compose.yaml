@@ -5,8 +5,8 @@ services:
     build: .
     container_name: app_patterns_go
     volumes:
-      - .:/app
+      - .:/go/src
     ports:
-      - 8000:8000
+      - 8010:8000
     extra_hosts:
       - "host.docker.internal:172.17.0.1"

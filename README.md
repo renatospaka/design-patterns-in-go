@@ -6,6 +6,7 @@
 3. Prototype
 4. Singleton
 5. Adapter
+6. Composite
 
 ## STRUCTURAL PATTERNS
 ## BEHAVIORAL PATTERNS

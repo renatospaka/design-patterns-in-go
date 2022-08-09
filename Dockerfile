@@ -1,21 +1,25 @@
-FROM golang:1.18.2-stretch
+FROM golang:1.19.0
 
 ## UPDATE THE OS
 RUN apt-get update && \
+    go install -v golang.org/x/tools/gopls@latest && \
     apt-get install -y tzdata 
-
-WORKDIR /app
 
 ## SET ENVIRONMENT
 ENV CGO_ENABLED=0 GOOS=linux GOARCH=amd64
 ENV TZ America/Sao_Paulo
 
-## COPY FILES
-COPY . .
+## COPY MOD FILES
+WORKDIR /go/src
+COPY go.mod go.sum ./
 
-## TIDY THE PROJECT
+## VERIFY AND TIDY THE PROJECT
 RUN go mod download && \
+    go mod verify && \
     go mod tidy
+
+## COPY NECESSARY FILES
+COPY . .
 
 ## KEEP THE CONTAINER RUNNiNG
 CMD ["tail", "-f", "/dev/null"]
