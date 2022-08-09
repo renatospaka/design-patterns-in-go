@@ -5,7 +5,7 @@ services:
     build: .
     container_name: app_patterns_go
     volumes:
-      - .:/app
+      - .:/go/src
     ports:
       - 8010:8000
     extra_hosts:
