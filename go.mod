@@ -1,3 +1,3 @@
 module github.com/renatospaka/design-pattern-go
 
-go 1.18
+go 1.19
