@@ -5,8 +5,10 @@
 2. Builder
 3. Prototype
 4. Singleton
-5. Adapter
-6. Composite
 
 ## STRUCTURAL PATTERNS
+5. Adapter
+6. Composite
+7. Decorator
+
 ## BEHAVIORAL PATTERNS
