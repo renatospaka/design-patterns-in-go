@@ -30,8 +30,13 @@ func main() {
 	// // ************
 	// tests.TestBridge()
 
+	// // ************
+	// // ** COMPOSIT
+	// // ************
+	// tests.TestComposit()
+
 	// ************
-	// ** COMPOSIT
+	// ** DECORATOR
 	// ************
-	tests.TestComposit()
+	tests.TestDecorator()
 }
