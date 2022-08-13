@@ -35,8 +35,13 @@ func main() {
 	// // ************
 	// tests.TestComposit()
 
+	// // ************
+	// // ** DECORATOR
+	// // ************
+	// tests.TestDecorator()
+
 	// ************
-	// ** DECORATOR
+	// ** FACADE
 	// ************
-	tests.TestDecorator()
+	tests.TestFacade()
 }

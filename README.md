@@ -7,8 +7,9 @@
 4. Singleton
 
 ## STRUCTURAL PATTERNS
-5. Adapter
-6. Composite
-7. Decorator
+1. Adapter
+2. Composite
+3. Decorator
+4. Facade
 
 ## BEHAVIORAL PATTERNS
