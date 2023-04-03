@@ -40,8 +40,13 @@ func main() {
 	// // ************
 	// tests.TestDecorator()
 
+	// // ************
+	// // ** FACADE
+	// // ************
+	// tests.TestFacade()
+
 	// ************
-	// ** FACADE
+	// ** FLYWEIGHT
 	// ************
-	tests.TestFacade()
+	tests.TestFlyWeight()
 }

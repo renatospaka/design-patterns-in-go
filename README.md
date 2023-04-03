@@ -13,3 +13,4 @@
 4. Facade
 
 ## BEHAVIORAL PATTERNS
+1. Fly Weight
