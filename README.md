@@ -11,6 +11,6 @@
 2. Composite
 3. Decorator
 4. Facade
+5. Fly Weight
 
 ## BEHAVIORAL PATTERNS
-1. Fly Weight
