@@ -3,7 +3,7 @@ package tests
 import (
 	"fmt"
 
-	"github.com/renatospaka/design-pattern-go/composite"
+	"github.com/renatospaka/design-pattern-go/structural/composite"
 )
 
 func TestComposit() {
