@@ -3,7 +3,7 @@ package tests
 import (
 	"fmt"
 
-	"github.com/renatospaka/design-pattern-go/facade"
+	"github.com/renatospaka/design-pattern-go/structural/facade"
 )
 
 func TestFacade() {
