@@ -3,7 +3,7 @@ package tests
 import (
 	"fmt"
 
-	"github.com/renatospaka/design-pattern-go/factory"
+	"github.com/renatospaka/design-pattern-go/creational/factory"
 )
 
 func TestFactoryPattern() {
