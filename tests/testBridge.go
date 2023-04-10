@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/renatospaka/design-pattern-go/bridge"
+	"github.com/renatospaka/design-pattern-go/structural/bridge"
 )
 
 func TestBridge() {

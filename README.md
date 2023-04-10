@@ -13,5 +13,6 @@
 4. Facade
 5. Fly Weight
 6. Proxy
+7. Bridge
 
 ## BEHAVIORAL PATTERNS
