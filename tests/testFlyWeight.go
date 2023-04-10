@@ -3,7 +3,7 @@ package tests
 import (
 	"fmt"
 
-	"github.com/renatospaka/design-pattern-go/flyweight"
+	"github.com/renatospaka/design-pattern-go/structural/flyweight"
 )
 
 func TestFlyWeight() {
