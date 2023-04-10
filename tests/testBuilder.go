@@ -3,7 +3,7 @@ package tests
 import (
 	"fmt"
 
-	"github.com/renatospaka/design-pattern-go/builder"
+	"github.com/renatospaka/design-pattern-go/creational/builder"
 )
 
 func TestBuilderPattern() {
