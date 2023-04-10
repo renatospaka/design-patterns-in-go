@@ -3,7 +3,7 @@ package tests
 import (
 	"fmt"
 
-	"github.com/renatospaka/design-pattern-go/decorator"
+	"github.com/renatospaka/design-pattern-go/structural/decorator"
 )
 
 func TestDecorator() {
