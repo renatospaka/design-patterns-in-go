@@ -3,7 +3,7 @@ package tests
 import (
 	"fmt"
 
-	"github.com/renatospaka/design-pattern-go/singleton"
+	"github.com/renatospaka/design-pattern-go/creational/singleton"
 )
 
 func TestSingleton() {
