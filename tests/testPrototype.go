@@ -3,7 +3,7 @@ package tests
 import (
 	"fmt"
 
-	"github.com/renatospaka/design-pattern-go/prototype"
+	"github.com/renatospaka/design-pattern-go/creational/prototype"
 )
 
 func TestPrototypePattern() {
