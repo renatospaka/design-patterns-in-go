@@ -12,5 +12,6 @@
 3. Decorator
 4. Facade
 5. Fly Weight
+6. Proxy
 
 ## BEHAVIORAL PATTERNS

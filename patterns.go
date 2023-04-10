@@ -45,8 +45,13 @@ func main() {
 	// // ************
 	// tests.TestFacade()
 
+	// // ************
+	// // ** FLYWEIGHT
+	// // ************
+	// tests.TestFlyWeight()
+
 	// ************
-	// ** FLYWEIGHT
+	// ** PROXY
 	// ************
-	tests.TestFlyWeight()
+	tests.TestProxy()
 }
