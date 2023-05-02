@@ -50,8 +50,13 @@ func main() {
 	// // ************
 	// tests.TestFlyWeight()
 
+	// // ************
+	// // ** PROXY
+	// // ************
+	// tests.TestProxy()
+
 	// ************
-	// ** PROXY
+	// ** CHAIN OF RESP
 	// ************
-	tests.TestProxy()
+	tests.TestChainOfResponsability()
 }

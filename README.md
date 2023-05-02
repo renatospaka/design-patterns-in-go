@@ -16,3 +16,4 @@
 7. Bridge
 
 ## BEHAVIORAL PATTERNS
+1. Chain of Responsibility
