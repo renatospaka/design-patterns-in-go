@@ -55,8 +55,13 @@ func main() {
 	// // ************
 	// tests.TestProxy()
 
+	// // ************
+	// // ** CHAIN OF RESP
+	// // ************
+	// tests.TestChainOfResponsability()
+
 	// ************
-	// ** CHAIN OF RESP
+	// ** COMMAND
 	// ************
-	tests.TestChainOfResponsability()
+	tests.TestCommand()
 }

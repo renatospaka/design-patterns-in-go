@@ -17,3 +17,4 @@
 
 ## BEHAVIORAL PATTERNS
 1. Chain of Responsibility
+2. Command
