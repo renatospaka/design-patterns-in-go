@@ -14,14 +14,21 @@ type BankAccount struct {
 	balance int
 }
 
+type Banking interface {
+	Deposit(amount int)
+	Withdraw(amount int) bool
+}
+
 func (b *BankAccount) Deposit(amount int) {
 	b.balance += amount
 	fmt.Println("Deposited", amount, "\b, balance is now", b.balance)
 }
 
-func (b *BankAccount) Withdraw(amount int) {
+func (b *BankAccount) Withdraw(amount int) bool {
 	if b.balance - amount >= overDraftLimit {
 		b.balance -= amount
-		fmt.Println("Withdrew", amount, "\b, balance is now", b.balance)		
+		fmt.Println("Withdrew", amount, "\b, balance is now", b.balance)	
+		return true	
 	}
+	return false
 }

@@ -16,4 +16,7 @@ func TestCommand() {
 	deposit2 := command.NewBankAccountCommand(&bankAcc, command.Withdraw, 50)
 	deposit2.Call()
 	fmt.Println(bankAcc)
+
+	deposit2.Undo()
+	fmt.Println(bankAcc)
 }
