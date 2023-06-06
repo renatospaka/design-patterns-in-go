@@ -2,6 +2,11 @@ package command
 
 import "fmt"
 
+type Banking interface {
+	Deposit(amount int)
+	Withdraw(amount int) bool
+}
+
 type Action int
 
 const (
@@ -14,9 +19,10 @@ type BankAccount struct {
 	balance int
 }
 
-type Banking interface {
-	Deposit(amount int)
-	Withdraw(amount int) bool
+func NewBankAccount(balance int) *BankAccount {
+	return &BankAccount{
+		balance: balance,
+	}
 }
 
 func (b *BankAccount) Deposit(amount int) {

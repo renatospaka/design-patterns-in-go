@@ -19,4 +19,15 @@ func TestCommand() {
 
 	deposit2.Undo()
 	fmt.Println(bankAcc)
+
+	fmt.Println()
+	fmt.Println("Command -> composite command")
+	from := command.NewBankAccount(100)
+	to := command.NewBankAccount(0)
+	transfer := command.NewMoneyTransferCommand(from, to, 25)
+	transfer.Call()
+	fmt.Println(from, to)
+	
+	transfer.Undo()
+	fmt.Println(from, to)
 }

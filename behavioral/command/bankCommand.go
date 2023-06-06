@@ -3,6 +3,8 @@ package command
 type Command interface {
 	Call()
 	Undo()
+	Succeded() bool
+	SetSucceded(value bool)
 }
 
 type BankAccountCommand struct {
@@ -31,7 +33,9 @@ func (b *BankAccountCommand) Call() {
 }
 
 func (b *BankAccountCommand) Undo() {
-	if (!b.succeded) {return}
+	if !b.succeded {
+		return
+	}
 
 	switch b.action {
 	case Deposit:
@@ -39,4 +43,12 @@ func (b *BankAccountCommand) Undo() {
 	case Withdraw:
 		b.account.Deposit(b.amount)
 	}
+}
+
+func (b *BankAccountCommand) Succeded() bool {
+	return b.succeded
+}
+
+func (b *BankAccountCommand) SetSucceded(value bool) {
+	b.succeded = value
 }
